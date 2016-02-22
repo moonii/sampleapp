@@ -1,0 +1,13 @@
+---
+# task: 02-02-findbugs
+
+        platform: linux
+        image: docker:///mhlee/javapmd
+        inputs:
+          - name: jar-file
+        outputs:
+          - name: findbugs-out
+           #path: /
+        run:
+          path: git-01/ci/pipeline/scripts/findbugs.sh
+
