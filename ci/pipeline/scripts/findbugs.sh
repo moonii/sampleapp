@@ -6,13 +6,16 @@ echo "current path: " $PWD
 
 ls -os
 
-java -Xmx512m -jar /findbugs-3.0.1/lib/findbugs.jar -textui jar-file -output jar-file/findbugsReports.html
+java -Xmx512m -jar /findbugs-3.0.1/lib/findbugs.jar -textui jar-file -output jar-file/reports/findbugsReports.html
 
 #echo "ls -os /reports ............................................."
 #ls -os /reports
 
 echo "ls -os /jar-file ............................................."
 ls -os /jar-file
+
+echo "ls -os /jar-file/reports ............................................."
+ls -os /jar-file/reports
 
 echo "ls -os  ............................................."
 ls -os 
